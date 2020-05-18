@@ -1,6 +1,8 @@
 {
   "name": "perfectpay-test",
   "version": "0.1.0",
+  "author": "Iago Rodrigues<yagomello@gmail.com>",
+  "homepage": "https://oiagorodrigues.github.io/perfectpay-test/",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
