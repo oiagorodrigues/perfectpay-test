@@ -1,12 +1,18 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import './assets/sass/style.scss'
+import Vue from 'vue'
+import App from './App.vue'
+import store from './store'
+import router from './router'
 
-Vue.config.productionTip = false;
+import { GlobalPlugin, GlobalComponents, GlobalFilters } from './global'
+Vue.use(GlobalPlugin)
+Vue.use(GlobalComponents)
+Vue.use(GlobalFilters)
+
+Vue.config.productionTip = false
 
 new Vue({
-  router,
   store,
-  render: h => h(App)
-}).$mount("#app");
+  router,
+  render: (h) => h(App),
+}).$mount('#app')
